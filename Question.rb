@@ -6,6 +6,7 @@ class Question
     @secondNumber = rand(6);
     @question = "#{name}: What is #{@firstNumber} + #{@secondNumber}"
     @answer = @firstNumber + @secondNumber
+    @name = name;
   end
 
   def getQuestion
@@ -20,10 +21,10 @@ class Question
   def compareAnswers
     input = getUserAnswer;
     if input.to_i == @answer
-      puts 'Correct'
+      puts "#{@name}: YES! You are correct."
       return true
     else
-      puts 'incorrect Answer'
+      puts "#{@name}: Seriously? No!"
       return false 
     end
   end
