@@ -16,6 +16,6 @@ class Player
 end
 
 
-p = Player.new('P1');
-p.currentScore
+# p = Player.new('P1');
+# p.currentScore
 
