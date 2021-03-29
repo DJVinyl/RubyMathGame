@@ -34,8 +34,3 @@ class Question
     compareAnswers
   end
 end
-
-
-
-# q = Question.new('P1');
-# q.ask

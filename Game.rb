@@ -15,7 +15,6 @@ class Game
     end
   end
 
-
   def play
     turn = @p1
     loop do
@@ -33,6 +32,3 @@ class Game
     end
   end
 end
-
-# g = Game.new
-# g.play
