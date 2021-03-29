@@ -1,24 +1,20 @@
-class Person
-  attr_accessor :name
-  # attr_reader :name
-  # attr_writer :name
+class Player
+  attr_accessor :name, :score
   def initialize(name)
     @name = name
+    @score = 3;
   end
 
-  # def name  ##Gets the @name
-  #   @name
-  # end
+  def reduceScore()
+    @score -= 1
+  end
 
-  # def name=(n)
-  #   @name = n
-  # end  
-
+  def currentScore()
+    puts @score.to_s + "/3"
+  end
 
 end
 
 
-p = Person.new('L. Ron')
-puts p.name
-p.name = "New Name"
-puts p.name
+p = Player.new('P1');
+
