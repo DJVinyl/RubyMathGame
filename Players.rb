@@ -17,4 +17,5 @@ end
 
 
 p = Player.new('P1');
+p.currentScore
 
